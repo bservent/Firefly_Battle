@@ -72,7 +72,7 @@ function startGame() {
     ships[0].greet()
     military1.greet()
 
-    while(ships.length > 0){
+    while(ships.length >= 0){
             military1.attack1(ships[0]);
             console.log(`%c ${military1.name} ATTACKS ${ships[0].name}`, 'color: green');
             ships[0].attack1(military1);
@@ -80,23 +80,25 @@ function startGame() {
     
 
         if (military1.hull <= 0 && ships[0].hull > 0) {
-            console.log(`%c ${military1.name} HAS BEEN DEFEATED!`, '36px; color: red');
-            console.log(`${ships[0].name} HAS WON!`, 'color: green;');
+            console.log(`%c ${military1.name} HAS BEEN DEFEATED!`, 'color: green');
+            console.log(`${ships[0].name} HAS WON THE GAME!`);
+            break
         } else if (ships[0].hull <= 0 && military1.hull > 0) {
-            console.log(`%c ${ships[0].name} HAS BEEN DEFEATED!`, '36px; color: red');
+            console.log(`%c ${ships[0].name} HAS BEEN DEFEATED!`, 'color: red');
             console.log(`%c ${military1.name} HAS WON!`, 'color: green;');
             ships.shift();
             const promptSaying = prompt('Do you want to retreat? Yes or No.');
             if (promptSaying === 'Yes') {
                 console.log('retreating')
-                console.log(`%c ${ships[0].name} HAS WON!!!`, '36px; color: red');
-                break 
-            }
+                console.log(`%c ${ships[0].name} HAS WON!!!`, 'color: red');
+                break
         }
-
     }
-    if (military1.hull > 0) {
-        console.log('%c YOU HAVE WON!!!!!', 'color: green;')
+        if (military1.hull > 0 && ships.length === 0) {
+            console.log('GAME OVER!!! YOU HAVE WON!!!!!')
+            return startGame();
+            
+    }
     }
 }
 
