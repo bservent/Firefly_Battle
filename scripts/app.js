@@ -89,7 +89,7 @@ function startGame() {
             ships.shift();
             const promptSaying = prompt('Do you want to retreat? Yes or No.');
             if (promptSaying === 'Yes') {
-                console.log('retreating')
+                console.log(`${military1.name} is retreating!!!`)
                 console.log(`%c ${ships[0].name} HAS WON!!!`, 'color: red');
                 break
         }
@@ -102,6 +102,6 @@ function startGame() {
     }
 }
 
-
+startGame();
 
  
