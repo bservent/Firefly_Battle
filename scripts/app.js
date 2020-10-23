@@ -17,7 +17,7 @@ class Spaceship {
         this.name = name,
         this.hull = hull,
         this.firepower = firepower,
-        this.cd accuracy  = accuracy
+        this.accuracy  = accuracy
     }
 };
 
