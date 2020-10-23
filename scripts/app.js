@@ -17,7 +17,7 @@ class Spaceship {
         this.name = name,
         this.hull = hull,
         this.firepower = firepower,
-        this.accuracy  = accuracy
+        this.cd accuracy  = accuracy
     }
 };
 
@@ -63,12 +63,12 @@ class Military extends Spaceship {
     
 };
 
-const military1 = new Military ('USS Assembly', 20, 5, .7)
+const military1 = new Military ('FireFly', 20, 5, .7)
 
 
 //_____________________ATTACK ATTACK ATTACK______________________________
 
-function startGame() {
+document.addEventListener('click', function(startGame) {
     ships[0].greet()
     military1.greet()
 
@@ -99,12 +99,12 @@ function startGame() {
         }
         if (military1.hull > 0 && ships.length === 0) {
             console.log(`GAME OVER!!! ${military1.name} has won!!!!!`)
-            return startGame();
+            console.log('Refresh browser to play again!')
+            break
             
         }
     }
-}
+});
 
-startGame()
 
  

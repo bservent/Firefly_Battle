@@ -1,3 +1,21 @@
 body {
-    background: cadetblue
+    font-family: 'Staatliches', cursive;
+    color: rgb(124, 124, 203);
+    background-image: url(moon.photo/chuttersnap-8mQYYtHOFxo-unsplash.jpg);
+    min-height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+button {
+    border-radius: 20px;
 }
