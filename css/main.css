@@ -1,7 +1,7 @@
 body {
     font-family: 'Staatliches', cursive;
     color: rgb(124, 124, 203);
-    background-image: url(moon.photo/chuttersnap-8mQYYtHOFxo-unsplash.jpg);
+    background-image: url(https://images.unsplash.com/photo-1555601402-94a43ea6515c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
     min-height: 100vh;
 }
 
