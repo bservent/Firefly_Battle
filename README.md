@@ -10,7 +10,7 @@ User will start game by clicking on "start-battle" button. The battle will print
 
 ## Screenshots
 Landing Page with Console Open
-https://i.imgur.com/PhRtBH2.png
+<img width="1440" alt="Screen Shot 2020-10-22 at 9 51 58 PM" src="https://user-images.githubusercontent.com/69656339/96960739-feb86480-14b7-11eb-87f1-6f8e6b1b94f1.png">
 
 Start Battle Button clicked and Retreat Prompt
 (https://i.imgur.com/QjYYFnQ.png)
