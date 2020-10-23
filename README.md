@@ -1,5 +1,5 @@
-### FireFly Battle
-## Interactive Console Game
+# FireFly Battle
+### Interactive Console Game
 
 
 ## What is it?
@@ -10,12 +10,12 @@ User will start game by clicking on "start-battle" button. The battle will print
 
 ## Screenshot
 #Landing Page with Console Open
-![Screenshot] (https://i.imgur.com/zZKTP3E.png)
+![Screenshot] (https://i.imgur.com/dQG3Cam.jpg)
+
 #Start Battle Button clicked and Retreat Prompt
 ![Screenshot] (https://i.imgur.com/QjYYFnQ.png)
 
 ## Technologies
-
 Frontend - HTML, CSS, JS, Unplash
 
 
