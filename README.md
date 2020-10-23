@@ -13,7 +13,7 @@ Landing Page with Console Open
 <img width="1440" alt="Screen Shot 2020-10-22 at 9 51 58 PM" src="https://user-images.githubusercontent.com/69656339/96960739-feb86480-14b7-11eb-87f1-6f8e6b1b94f1.png">
 
 Start Battle Button clicked and Retreat Prompt
-(https://i.imgur.com/QjYYFnQ.png)
+<img width="1440" alt="Screen Shot 2020-10-22 at 9 52 07 PM" src="https://user-images.githubusercontent.com/69656339/96960837-3b845b80-14b8-11eb-97dd-f2905d725c63.png">
 
 ## Technologies
 Frontend - HTML, CSS, JS, Unplash
