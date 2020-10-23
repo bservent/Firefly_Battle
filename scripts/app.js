@@ -44,7 +44,7 @@ const ships = [];
 for (let i = 0; i < 6; i++) {
     const alien = new Aliens (names[i]);
     ships.push(alien);
-}
+};
 
 
 
@@ -77,8 +77,7 @@ function startGame() {
             console.log(`%c ${military1.name} ATTACKS ${ships[0].name}`, 'color: green');
             ships[0].attack1(military1);
             console.log(`%c ${ships[0].name} ATTACKS ${military1.name}`, 'color: red');
-    
-
+            console.log(`HP = ${military1.name}: ${military1.hull}, ${ships[0].name}: ${ships[0].hull}`)
         if (military1.hull <= 0 && ships[0].hull > 0) {
             console.log(`%c ${military1.name} HAS BEEN DEFEATED!`, 'color: green');
             console.log(`${ships[0].name} HAS WON THE GAME!`);
@@ -91,17 +90,21 @@ function startGame() {
             if (promptSaying === 'Yes') {
                 console.log(`${military1.name} is retreating!!!`)
                 console.log(`%c ${ships[0].name} HAS WON!!!`, 'color: red');
+                console.log(`Game Over`);
                 break
+            }
+        } else {
+            console.log(`${military1.name} and ${ships[0].name} have died! Refresh the browser to try again!`)
+            break
         }
-    }
         if (military1.hull > 0 && ships.length === 0) {
-            console.log('GAME OVER!!! YOU HAVE WON!!!!!')
+            console.log(`GAME OVER!!! ${military1.name} has won!!!!!`)
             return startGame();
             
-    }
+        }
     }
 }
 
-startGame();
+startGame()
 
  
