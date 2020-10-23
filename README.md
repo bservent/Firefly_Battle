@@ -1,5 +1,5 @@
-###Firefly_Battle
-#Interactive Console Game
+### FireFly Battle
+## Interactive Console Game
 
 
 ## What is it?
